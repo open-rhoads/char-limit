@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="char-limit.js">
+
+ /* function showComment(){ 
+    //get the length of the comments (with document/textbox objects)
+    let userValue = document.getElementById('comments');
+    //console.log(userValue);
+    const userEntrySize = userValue.value.length;
+    //console.log(userEntrySize);
+
+    //find the characters left by subtracting 255 - length
+    const remainder = 255 - userEntrySize;
+    //console.log(remainder);
+    document.getElementById('numleft').innerHTML = remainder;
+    
+    //condition if we go over 255
+    //disable the field or just make the value equal to the first 255 characters.
+    if (remainder <= 0) {
+      
+      userValue.value = userValue.value.substr(0, 255);
+      document.getElementById('numleft').innerHTML = '0';
+
+      //alert('you have run out of characters');
+      //userValue.disabled;
+
+    }
+    
+  }    */
+    
+</script>    
+    
+    
+</head>
+<body>
+
+<form action="" method="post">    
+<input type="text" name="fullname" id="fullname"  placeholder="fullname"><span class="err"></span><br />
+<div id ="showcomment">You have <span id="numleft"></span> characters of your 255 left!</div>        
+<textarea id="comments"  maxlength="300" onkeyup="showComment();"></textarea>   
+<input type="submit" name="submit" value="Enter"> 
+    </form>
+</body>    
+</html>    
+
+
